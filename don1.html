@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on and off</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        button{
+            background-color: green;
+            height: 20%;
+            width: 20%;
+           
+        }
+        img{
+            height: 500px;
+            width: 500px;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <img id="imm" src="on.jpg"></img>
+    <button id="btm"><h1>ON</h1></button>
+    <script>
+        let btt = document.getElementById("btm");
+        let igg = document.getElementById("imm");
+        btt.addEventListener('click',chh);
+        function chh(){
+             igg.src="off.jpg";
+            
+        }
+    </script>
+</body>
+</html>
